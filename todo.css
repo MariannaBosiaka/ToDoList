@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html,body{
+    
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    
+    background-color: #153677;
+}
+
+h1,h2,h3,p, ::placeholder{
+    font-family: "Sora", sans-serif;
+   
+}
+
+
+.title{
+    color: rgb(43, 42, 42);
+    font-weight: 700;
+}
+
+.container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.todo-container{
+    
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    background-color:rgb(235, 235, 235);
+    padding: 20px 20px;
+
+}
+
+.add-task-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+    width:350px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 25px;
+
+}
+
+.add-task{
+    width: 70%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 20px;
+    color: #786868;
+    flex:1;
+       
+}
+
+.button{
+   width: 90px;
+   background-color: rgb(237, 79, 1);
+   border-radius: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.button h3{
+    color: rgb(235, 235, 235);
+    font-size: 14px;
+}
+
+
+
+
