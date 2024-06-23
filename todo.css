@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: "Sora", sans-serif;
 
 }
 
@@ -18,11 +19,6 @@ html,body{
 body{
     
     background-color: #153677;
-}
-
-h1,h2,h3,p, ::placeholder{
-    font-family: "Sora", sans-serif;
-   
 }
 
 
@@ -41,7 +37,6 @@ h1,h2,h3,p, ::placeholder{
 
 .todo-container{
     
-    height: 500px;
     width: 400px;
     border-radius: 20px;
     background-color:rgb(235, 235, 235);
@@ -78,6 +73,8 @@ h1,h2,h3,p, ::placeholder{
    display: flex;
    justify-content: center;
    align-items: center;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
 }
 
 .button h3{
@@ -85,6 +82,17 @@ h1,h2,h3,p, ::placeholder{
     font-size: 14px;
 }
 
+.button:hover{
 
+    background-color: rgb(250, 100, 25);
+
+}
+
+.task{
+    margin: 10px 0px 0px 10px;
+    color: rgb(43, 42, 42);
+    list-style: none;
+    font-size: 16px;
+}
 
 
