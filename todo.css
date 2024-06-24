@@ -38,6 +38,7 @@ body{
 .todo-container{
     
     width: 400px;
+    max-height: 500px;
     border-radius: 20px;
     background-color:rgb(235, 235, 235);
     padding: 20px 20px;
@@ -89,10 +90,47 @@ body{
 }
 
 .task{
-    margin: 10px 0px 0px 10px;
+    padding: 12px 8px 12px 50px;
     color: rgb(43, 42, 42);
     list-style: none;
     font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    
+    
+}
+
+.task:first-child{
+    margin-top: 15px;
+}
+
+ul li::before{
+
+    content: '';
+    position: absolute;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    height: 28px;
+    width: 28px;
+    left:8px;
+    top: 8px;
+    
+    
+}
+
+
+ul li.checked{
+    color: #786868;
+    text-decoration: line-through;
+    
+  
+}
+
+ul li.checked::before{
+    background-image: url(img/checked.png);
+    
+  
 }
 
 
